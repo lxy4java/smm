@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="lxy.dao.UsersDao">
+
+
+	<insert id="insert" parameterType="lxy.bean.User"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into
+		users(id,name,age,gender,hobby)values(#{id},#{name},#{age},#{gender},#{hobby})
+
+	</insert>
+
+
+
+
+
+
+
+
+
+
+
+</mapper>
